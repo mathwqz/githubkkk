@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Declaração de codificação de caracteres para suportar caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Configuração para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição breve do site para mecanismos de busca -->
     <meta name="description" content="InfoCinema: Descubra os maiores clássicos do cinema e mergulhe em histórias épicas que marcaram gerações.">
+    <!-- Palavras-chave para otimização em mecanismos de busca -->
     <meta name="keywords" content="filmes, cinema, clássicos, entretenimento, histórias épicas">
+    <!-- Indicação do autor do site -->
     <meta name="author" content="InfoCinema Team">
+    <!-- Título do site que aparece na aba do navegador -->
     <title>InfoCinema</title>
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Cabeçalho do site -->
     <header>
-        <h1>InfoCinema</h1>
-        <p>O seu portal para explorar os maiores clássicos do cinema.</p>
+        <h1>InfoCinema</h1> <!-- Título principal do site -->
+        <p>O seu portal para explorar os maiores clássicos do cinema.</p> <!-- Descrição curta do site -->
     </header>
 
+    <!-- Divisão principal que contém o conteúdo -->
     <div class="container">
+        <!-- Seção introdutória -->
         <section class="intro">
-            <h2>Sobre o InfoCinema</h2>
+            <h2>Sobre o InfoCinema</h2> <!-- Subtítulo -->
             <p>O InfoCinema é um site dedicado aos amantes da sétima arte. Nosso objetivo é celebrar os filmes que marcaram a história do cinema e apresentar as histórias épicas, personagens inesquecíveis e momentos cinematográficos que continuam a inspirar gerações. Aqui você encontrará informações e curiosidades sobre os maiores clássicos do cinema.</p>
         </section>
 
+        <!-- Seção dedicada aos filmes clássicos -->
         <section class="category">
-            <h2>Filmes Clássicos</h2>
+            <h2>Filmes Clássicos</h2> <!-- Título da seção -->
+            <!-- Divisão que organiza os cards em grade -->
             <div class="grid">
+                <!-- Card 1 -->
                 <div class="card">
+                    <!-- Link para assistir ao trailer no YouTube -->
                     <a href="https://www.youtube.com/watch?v=owK1qxDselE" target="_blank">
+                        <!-- Imagem do cartaz do filme -->
                         <img src="https://upload.wikimedia.org/wikipedia/pt/4/44/GladiadorPoster.jpg" alt="Gladiador">
                     </a>
-                    <h3>Gladiador (2000)</h3>
-                    <p>Um épico dirigido por Ridley Scott, que narra a trajetória de Maximus, um general traído que busca justiça e vingança enquanto se torna um gladiador em Roma.</p>
+                    <h3>Gladiador (2000)</h3> <!-- Nome do filme -->
+                    <p>Um épico dirigido por Ridley Scott, que narra a trajetória de Maximus, um general traído que busca justiça e vingança enquanto se torna um gladiador em Roma.</p> <!-- Descrição do filme -->
                 </div>
 
+                <!-- Card 2 -->
                 <div class="card">
                     <a href="https://www.youtube.com/watch?v=Pki6jbSbXIY" target="_blank">
                         <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/38/Lord_of_the_Rings_Fellowship_of_the_Ring.jpg/250px-Lord_of_the_Rings_Fellowship_of_the_Ring.jpg" alt="O Senhor dos Anéis: A Sociedade do Anel">
@@ -40,6 +56,7 @@
                     <p>O primeiro capítulo da trilogia épica dirigida por Peter Jackson, onde Frodo e seus amigos embarcam em uma jornada para destruir o Um Anel.</p>
                 </div>
 
+                <!-- Card 3 -->
                 <div class="card">
                     <a href="https://www.youtube.com/watch?v=sY1S34973zA" target="_blank">
                         <img src="https://ingresso-a.akamaihd.net/prd/img/movie/o-poderoso-chefao-50-anos/008274f7-a76d-484f-8b5b-1c639c2ce46b.jpg" alt="O Poderoso Chefão">
@@ -48,6 +65,7 @@
                     <p>Um clássico absoluto de Francis Ford Coppola que explora a vida da família Corleone e os desafios do poder e lealdade na máfia.</p>
                 </div>
 
+                <!-- Card 4 -->
                 <div class="card">
                     <a href="https://www.youtube.com/watch?v=lc0UehYemQA" target="_blank">
                         <img src="https://upload.wikimedia.org/wikipedia/pt/e/e7/Jurassic_Park_poster.jpg" alt="Jurassic Park">
@@ -58,31 +76,39 @@
             </div>
         </section>
 
+        <!-- Seção do formulário de cadastro -->
         <section class="form-section">
-          <h2>Cadastre-se para acessar mais mídias</h2>
+          <h2>Cadastre-se para acessar mais mídias</h2> <!-- Título da seção -->
           <form>
+              <!-- Campo para nome completo -->
               <label for="name">Nome Completo:</label>
               <input type="text" id="name" name="name" placeholder="Seu nome" required>
       
+              <!-- Campo para e-mail -->
               <label for="email">E-mail:</label>
               <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
       
+              <!-- Campo para o filme favorito -->
               <label for="favorite-movie">Filme Favorito:</label>
               <input type="text" id="favorite-movie" name="favorite-movie" placeholder="Seu filme favorito" required>
       
+              <!-- Botão para envio do formulário -->
               <button type="submit">Cadastrar</button>
           </form>
+          <!-- Divisão para exibição de usuários cadastrados -->
           <div id="user-list">
-              <h3>Usuários Cadastrados:</h3>
-              <ul></ul>
+              <h3>Usuários Cadastrados:</h3> <!-- Título da lista -->
+              <ul></ul> <!-- Lista dinâmica de usuários -->
           </div>
       </section>
       
     </div>
 
+    <!-- Rodapé do site -->
     <footer>
-        <p>InfoCinema &copy; 2024. Todos os direitos reservados.</p>
+        <p>InfoCinema &copy; 2024. Todos os direitos reservados.</p> <!-- Mensagem de direitos autorais -->
     </footer>
+    <!-- Link para o arquivo JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>
