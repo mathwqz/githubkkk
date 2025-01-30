@@ -63,6 +63,27 @@ h1:hover, h2:hover {
     line-height: 1.6;
 }
 
+/* Estilos para o botão de voltar */
+.back-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button button {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button button:hover {
+    background-color: #d35400;
+}
+
 blockquote {
     background: #333;
     border-left: 5px solid #f39c12;
